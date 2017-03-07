@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Mishka - форма заказа</title>
+</head>
+<body>
+  <header class="page-header">
+    <img class="header-logo" src="http://placehold.it/86x35" alt="mishka">
+    <nav class="page-nav">
+      <ul>
+        <li>Каталог товаров</li>
+        <li>Вязание на заказ</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="main-header">
+      <h1>Вязание на заказ</h1>
+      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
+    </header>
+
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset>
+          <legend>ТИП</legend>
+          <div class="form-elem">
+            <input id="radio-1" name="goodstype" type="radio" checked>
+            <label for="radio-1">Аксессуар для интерьера</label>
+
+            <input id="radio-2" name="goodstype" type="radio">
+            <label for="radio-2">Детская игрушка</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Цвет</legend>
+          <div class="form-elem">
+            <input id="white" name="white" type="checkbox" checked>
+            <label for="white">Белый</label>
+
+            <input id="gray" name="gray" type="checkbox" checked>
+            <label for="gray">Серый</label>
+
+            <input id="Tiffany" name="Tiffany" type="checkbox">
+            <label for="Tiffany">&laquo;Тиффани&raquo;</label>
+
+            <input id="black" name="black" type="checkbox">
+            <label for="black">Черный</label>
+
+            <input id="pink" name="pink" type="checkbox">
+            <label for="pink">Розовый</label>
+
+            <input id="orange" name="orange" type="checkbox">
+            <label for="orange">Оранжевый</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>ФИО</legend>
+          <div class="form-elem">
+            <label for="firstname">Имя</label>
+            <input id="firstname" name="firstname" type="text" placeholder="Введите ваше имя*">
+
+            <label for="lastname"></label>
+            <input id="lastname" name="lastname" type="text" placeholder="Укажите фамилию*">
+
+            <label for="patronymic"></label>
+            <input id="patronymic" name="patronymic" type="text" placeholder="Отчество, если желаете">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>ТЕЛ</legend>
+          <div class="form-elem">
+            <input id="mobile" name="mobile" type="tel" placeholder="+7 XXX XX XX*">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>ДОП</legend>
+          <div class="form-elem">
+            <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+          </div>
+        </fieldset>
+        <label>*Поля обязательны для заполнения</label>
+        <div class="main-btn">
+          <input type="submit" value="отправить заказ">
+        </div>
+      </form>
+  </main>
+
+  <footer class="page-footer">
+    <figure class="footer-social">
+      <a href="#" class="footer-instagram">
+        <img src="http://placehold.it/22x21" alt="instagram">
+      </a>
+      <a href="#" class="footer-facebook">
+        <img src="http://placehold.it/15x29" alt="facebook">
+      </a>
+      <a href="#" class="footer-twitter">
+        <img src="http://placehold.it/24x20" alt="twitter">
+      </a>
+    </figure>
+
+    <section class="footer-copyright">
+      <h2>Разработано</h2>
+      <img src="http://placehold.it/27x34" alt="htmlacademy">
+    </section>
+  </footer>
+
+
+</body>
+</html>
