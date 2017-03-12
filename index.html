@@ -18,117 +18,172 @@
 <body>
   <header class="page-header">
     <img class="header-logo" src="http://placehold.it/86x35" alt="mishka">
-    <nav class="page-nav">
-      <ul>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li>Вязание на заказ</li>
+
+    <nav class="page-nav-left">
+      <ul class="page-nav__list">
+        <li class="page-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="page-nav__item">Вязание на заказ</li>
       </ul>
     </nav>
+
+    <div class="page-nav-right">
+      <form action="#" class="nav-seach">
+        <span class="nav-search__icon"></span>
+        <input class="nav-seach__input" type="seach" placeholder="Поиск по сайту">
+      </form>
+      <div class="page-nav-cart">
+        <a class="cart" href="#">
+            <span class="cart__icon"></span>
+            <span class="cart__text">Корзина: пока пуста</span>
+        </a>
+      </div>
+    </div>
   </header>
 
   <main>
-    <header class="main-header">
-      <h1>Милые штучки ручной работы</h1>
+    <header class="main-header main-header--background">
+      <h1 class="main-header__title">Милые штучки ручной работы</h1>
     </header>
     <div class="main-category">
-      <div class="main-category__decor">
-        <h2 class="main-category__toy__title">Предметы интерьеры</h2>
-        <img class="main-category__decor__pic" src="http://placehold.it/41x62" width="41" height="62" alt="Предметы интерьеры">
+      <div class="main-category__item">
+        <span class="main-category__title main-category--interiorsvg">Предметы интерьеры</span>
       </div>
-      <div class="main-category__toy">
-        <h2 class="main-category__toy__title">Детские игрушки</h2>
-        <img class="main-category__decor__pic" src="http://placehold.it/61x61" width="61" height="61" alt="Детские игрушки">
+      <div class="main-category__item">
+        <span class="main-category__title main-category--toysvg">Детские игрушки</span>
       </div>
     </div>
 
-    <section class="main-goods">
-      <h2>Вязаные корзинки</h2>
-      <h3>Товар недели</h3>
-      <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <div class="main-goods_spec">
-        Цвет:<span>&laquo;Тиффани&raquo;/серый</span>
-        <hr>
-        Диаметр:<span>25 см</span>
-        <hr>
-        Высота:<span>15 см</span>
-        <hr>
-      </div>
-      <img class="main-goods__logo" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
-      <div class="main-goods-price">
-        <span class="main-goods__price--index">Цена: 990 руб.</span>
-      </div>
-
-      <div class="main-btn">
-        <input type="submit" value="заказать">
-      </div>
-    </section>
-
-
-    <section class="main_aboutus">
-      <h2>Коротко о нас</h2>
-      <div class="main_aboutus-elem">
-          <img class="main_aboutus-elem__pic" src="http://placehold.it/33x38" width="33" height="38" alt="Экологически чистые материалы<">
-          <h3 class="main_aboutus-elem__title">Экологически чистые материалы</h3>
+    <section class="index-product">
+      <h2 class="index-product__title">Вязаные корзинки</h2>
+      <span class="index-product__subtitle">Товар недели</span>
+      <p class="index-product__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <table class="index-product-spec">
+        <tr >
+          <td class="index-product-spec__name">Цвет:</td>
+          <td class="index-product__value">&laquo;Тиффани&raquo;/серый</td>
+        </tr>
+        <tr>
+          <td class="index-product-spec__name">Диаметр:</td>
+          <td class="index-product__value">25 см</td>
+        </tr>
+        <tr>
+          <td class="index-product-spec__name">Высота:</td>
+          <td class="index-product__value">15 см</td>
+        </tr>
+      </table>
+      <img class="index-product__pic" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+      <div class="index__price">
+        <span class="index-product__price">Цена: 990 руб.</span>
       </div>
 
-      <div class="main_aboutus-elem">
-          <img class="main_aboutus-elem__pic" src="http://placehold.it/47x27" width="47" height="27" alt="Скандинавский стиль по российской цене<">
-          <h3 class="main_aboutus-elem__title">Скандинавский стиль по российской цене</h3>
-      </div>
-
-      <div class="main_aboutus-elem">
-          <img class="main_aboutus-elem__pic" src="http://placehold.it/34x27" width="34" height="27" alt="Увеличивает лайки на фотографиях<">
-          <h3 class="main_aboutus-elem__title">Увеличивает лайки на фотографиях</h3>
-      </div>
-
-      <div class="main_aboutus-elem">
-          <img class="main_aboutus-elem__pic" src="http://placehold.it/35x34" width="35" height="34" alt="Связано вручную с любовью и умилением<">
-          <h3 class="main_aboutus-elem__title">Связано вручную с любовью и умилением</h3>
-      </div>
-
-      <div class="main_aboutus-elem">
-          <img class="main_aboutus-elem__pic" src="http://placehold.it/55x23" width="55" height="23" alt="Поддержка отечественного производителя<">
-          <h3 class="main_aboutus-elem__title">Поддержка отечественного производителя</h3>
-      </div>
-
-      <div class="main_aboutus-elem">
-          <img class="main_aboutus-elem__pic" src="http://placehold.it/33x32" width="33" height="32" alt="Поставляется в подарочной упаковке<">
-          <h3 class="main_aboutus-elem__title">Поставляется в подарочной упаковке</h3>
+      <div class="index-button">
+        <a href="#" class="index-btn">
+          <span class="index-btn__title">заказать</span>
+        </a>
       </div>
     </section>
 
+
+    <section class="index-aboutus">
+      <span class="index-aboutus__title">Коротко о нас</span>
+
+      <div class="main-advantages">
+          <img class="main-advantages__pic" src="http://placehold.it/33x38" width="33" height="38" alt="Экологически чистые материалы<">
+          <span class="main-advantages__title">Экологически чистые материалы</span>
+      </div>
+
+      <div class="main-advantages">
+          <img class="main-advantages__pic" src="http://placehold.it/47x27" width="47" height="27" alt="Скандинавский стиль по российской цене<">
+          <span class="main-advantages__title">Скандинавский стиль по российской цене</span>
+      </div>
+
+      <div class="main-advantages">
+          <img class="main-advantages__pic" src="http://placehold.it/34x27" width="34" height="27" alt="Увеличивает лайки на фотографиях<">
+          <span class="main-advantages__title">Увеличивает лайки на фотографиях</span>
+      </div>
+
+      <div class="main-advantages">
+          <img class="main-advantages__pic" src="http://placehold.it/35x34" width="35" height="34" alt="Связано вручную с любовью и умилением<">
+          <span class="main-advantages__title">Связано вручную с любовью и умилением</span>
+      </div>
+
+      <div class="main-advantages">
+          <img class="main-advantages__pic" src="http://placehold.it/55x23" width="55" height="23" alt="Поддержка отечественного производителя<">
+          <span class="main-advantages__title">Поддержка отечественного производителя</span>
+      </div>
+
+      <div class="main-advantages">
+          <img class="main-advantages__pic" src="http://placehold.it/33x32" width="33" height="32" alt="Поставляется в подарочной упаковке<">
+          <span class="main-advantages__title">Поставляется в подарочной упаковке</span>
+      </div>
+    </section>
+<!-- wwwwwwwwwwwwwwwwwwww -->
 
     <section class="main-reviews">
       <h2 class="main-reviews__title">Отзывы</h2>
-      <p class="main-reviews__message">
-        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-      </p>
-      <div data-itemprop="director" data-itemscope data-itemtype="http://schema.org/Person">
-        <span class="main-reviews__author" data-itemprop="name">Анастасия Красильникова</span> <br>
-        <span class="main-reviews__email" data-itemprop="email">@misssssiskras</span>
+      <div data-itemscope data-itemtype="http://schema.org/Review">
+        <div class="main-reviews__text" data-itemprop="pro">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</div>
+
+        <span class="main-reviews__author" data-itemprop="author" data-itemscope data-itemtype="http://schema.org/Person">
+          <span data-itemprop="name">Анастасия Красильникова</span>
+        </span>
+
+        <a class="main-reviews__email" data-itemprop="email" href="mailto:@misssssiskras">@misssssiskras</a>
+      </div>
+
+      <div class="main-reviews__nav">
+        <a href="#" class="main-reviews__arrow">
+          <span class="left-arrow">&larr;</span>
+        </a>
+        <a href="#" class="main-reviews__arrow">
+          <span class="right-arrow">&rarr;</span>
+        </a>
       </div>
     </section>
 
 
 
     <section class="main-contacts">
-      <h2>Контакты</h2>
-      <div data-itemscope data-itemtype="http://schema.org/Organization">
-        e-mail: <span data-itemprop="email">info@mimimishkashop.ru</span>
+      <h2 class="main-contacts__title">Контакты</h2>
+      <!-- не уверен на счет правильности этого решения -->
+      <table class="main-contacts__info">
+        <tr class="main-contacts__email">
+          <td>e-mail:</td>
+          <td><a class="" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+        </tr>
+        <tr class="main-contacts__adress">
+          <td>адрес:</td>
+          <td>г. Санкт-Петербург</td>
+        </tr>
+        <tr class="main-contacts__adress">
+          <td></td>
+          <td>ул. Большая
+              Конюшенная,
+              д. 19/8, офис 101
+          </td>
+        </tr>
+      </table>
+
+<!--       <div data-itemscope data-itemtype="http://schema.org/Organization">
+        e-mail: <a data-itemprop="email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         <div data-itemprop="address" data-itemscope data-itemtype="http://schema.org/PostalAddress">
           адрес:
-          <span data-itemprop="addressLocality">г. Санкт-Петербург</span>, <br>
+          <span data-itemprop="addressLocality">г. Санкт-Петербург</span>,
           <span data-itemprop="streetAddress">
-            ул. Большая <br>
-            Конюшенная, <br>
+            ул. Большая
+            Конюшенная,
             д. 19/8, офис 101
           </span>
         </div>
-      </div>
+      </div> -->
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7829646696823!2d30.320897981743908!3d59.93574346622937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963108a5fbea21%3A0xfb046cb2ccd90e6!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDMxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1488915323159" width="320" height="457" allowfullscreen></iframe>
-      <div class="main-btn">
-        <input type="submit" value="напишите нам">
+
+
+      <div class="index-button">
+        <a href="#" class="index-btn">
+          <span class="index-btn__title">напишите нам</span>
+        </a>
       </div>
     </section>
 
@@ -136,23 +191,37 @@
 
   <footer class="page-footer">
     <figure class="footer-social">
-      <a href="#" class="footer-instagram">
+      <a href="#" class="footer-social__icon footer-social__icon--instagram">
         <img src="http://placehold.it/22x21" alt="instagram">
       </a>
-      <a href="#" class="footer-facebook">
+      <a href="#" class="footer-social__icon footer-social__icon--facebook">
         <img src="http://placehold.it/15x29" alt="facebook">
       </a>
-      <a href="#" class="footer-twitter">
+      <a href="#" class="footer-social__icon footer-social__icon--twitter">
         <img src="http://placehold.it/24x20" alt="twitter">
       </a>
     </figure>
 
     <section class="footer-copyright">
-      <h2>Разработано</h2>
-      <img src="http://placehold.it/27x34" alt="htmlacademy">
+      <span class="footer-copyright__title">Разработано</span>
+      <img class="footer-copyright__pic" src="http://placehold.it/27x34" alt="htmlacademy">
     </section>
   </footer>
 
+
+  <div class="modal">
+    <span class="modal__title">Добавить в корзину</span>
+    <span class="modal__subtitle">Выберите размер:</span>
+    <button id="slim"   class="modal__btn">S</button>
+    <button id="medium" class="modal__btn">M</button>
+    <button id="large"  class="modal__btn">L</button>
+
+    <div class="modal-button">
+      <a href="#" class="modal-btn">
+        <span class="modal-btn__title">добавить</span>
+      </a>
+    </div>
+  </div>
 
 </body>
 </html>
