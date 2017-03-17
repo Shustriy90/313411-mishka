@@ -19,17 +19,17 @@
   <header class="page-header">
     <img class="header-logo" src="http://placehold.it/86x35" alt="mishka">
 
-    <nav class="page-nav-left">
+    <nav class="page-nav page-nav--left">
       <ul class="page-nav__list">
         <li class="page-nav__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="page-nav__item">Вязание на заказ</li>
       </ul>
     </nav>
 
-    <div class="page-nav-right">
-      <form action="#" class="nav-seach">
+    <div class="page-nav page-nav--right">
+      <form action="#" class="nav-search">
         <span class="nav-search__icon"></span>
-        <input class="nav-seach__input" type="seach" placeholder="Поиск по сайту">
+        <input class="nav-search__input" type="search">
       </form>
       <div class="page-nav-cart">
         <a class="cart" href="#">
@@ -46,10 +46,10 @@
     </header>
     <div class="main-category">
       <div class="main-category__item">
-        <span class="main-category__title main-category--interiorsvg">Предметы интерьеры</span>
+        <span class="main-category__title main-category__title--interiorsvg">Предметы интерьеры</span>
       </div>
       <div class="main-category__item">
-        <span class="main-category__title main-category--toysvg">Детские игрушки</span>
+        <span class="main-category__title main-category__title--toysvg">Детские игрушки</span>
       </div>
     </div>
 
@@ -60,32 +60,32 @@
       <table class="index-product-spec">
         <tr >
           <td class="index-product-spec__name">Цвет:</td>
-          <td class="index-product__value">&laquo;Тиффани&raquo;/серый</td>
+          <td class="index-product-spec__value">&laquo;Тиффани&raquo;/серый</td>
         </tr>
         <tr>
           <td class="index-product-spec__name">Диаметр:</td>
-          <td class="index-product__value">25 см</td>
+          <td class="index-product-spec__value">25 см</td>
         </tr>
         <tr>
           <td class="index-product-spec__name">Высота:</td>
-          <td class="index-product__value">15 см</td>
+          <td class="index-product-spec__value">15 см</td>
         </tr>
       </table>
       <img class="index-product__pic" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
-      <div class="index__price">
-        <span class="index-product__price">Цена: 990 руб.</span>
+      <div class="index-product__price">
+        <span>Цена: 990 руб.</span>
       </div>
 
-      <div class="index-button">
-        <a href="#" class="index-btn">
-          <span class="index-btn__title">заказать</span>
+      <div class="button button--index">
+        <a href="#" class="button-link">
+          <span class="button-link__text">заказать</span>
         </a>
       </div>
     </section>
 
 
-    <section class="index-aboutus">
-      <span class="index-aboutus__title">Коротко о нас</span>
+    <section class="main-aboutus">
+      <h2 class="main-aboutus__title">Коротко о нас</h2>
 
       <div class="main-advantages">
           <img class="main-advantages__pic" src="http://placehold.it/33x38" width="33" height="38" alt="Экологически чистые материалы<">
@@ -117,7 +117,6 @@
           <span class="main-advantages__title">Поставляется в подарочной упаковке</span>
       </div>
     </section>
-<!-- wwwwwwwwwwwwwwwwwwww -->
 
     <section class="main-reviews">
       <h2 class="main-reviews__title">Отзывы</h2>
@@ -145,7 +144,6 @@
 
     <section class="main-contacts">
       <h2 class="main-contacts__title">Контакты</h2>
-      <!-- не уверен на счет правильности этого решения -->
       <table class="main-contacts__info">
         <tr class="main-contacts__email">
           <td>e-mail:</td>
@@ -153,36 +151,18 @@
         </tr>
         <tr class="main-contacts__adress">
           <td>адрес:</td>
-          <td>г. Санкт-Петербург</td>
-        </tr>
-        <tr class="main-contacts__adress">
-          <td></td>
-          <td>ул. Большая
+          <td>г. Санкт-Петербург, ул. Большая
               Конюшенная,
-              д. 19/8, офис 101
-          </td>
+              д. 19/8, офис 101</td>
         </tr>
       </table>
-
-<!--       <div data-itemscope data-itemtype="http://schema.org/Organization">
-        e-mail: <a data-itemprop="email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        <div data-itemprop="address" data-itemscope data-itemtype="http://schema.org/PostalAddress">
-          адрес:
-          <span data-itemprop="addressLocality">г. Санкт-Петербург</span>,
-          <span data-itemprop="streetAddress">
-            ул. Большая
-            Конюшенная,
-            д. 19/8, офис 101
-          </span>
-        </div>
-      </div> -->
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7829646696823!2d30.320897981743908!3d59.93574346622937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963108a5fbea21%3A0xfb046cb2ccd90e6!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDMxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1488915323159" width="320" height="457" allowfullscreen></iframe>
 
 
-      <div class="index-button">
-        <a href="#" class="index-btn">
-          <span class="index-btn__title">напишите нам</span>
+      <div class="button button--index">
+        <a href="#" class="button-link">
+          <span class="button-link__text">напишите нам</span>
         </a>
       </div>
     </section>
@@ -202,23 +182,25 @@
       </a>
     </figure>
 
-    <section class="footer-copyright">
+    <div class="footer-copyright">
       <span class="footer-copyright__title">Разработано</span>
-      <img class="footer-copyright__pic" src="http://placehold.it/27x34" alt="htmlacademy">
-    </section>
+      <a class="footer-copyright__link" href="#">
+        <img class="footer-copyright__htmlacademy" src="http://placehold.it/27x34" alt="htmlacademy">
+      </a>
+    </div>
   </footer>
 
 
   <div class="modal">
     <span class="modal__title">Добавить в корзину</span>
     <span class="modal__subtitle">Выберите размер:</span>
-    <button id="slim"   class="modal__btn">S</button>
-    <button id="medium" class="modal__btn">M</button>
-    <button id="large"  class="modal__btn">L</button>
+    <button class="modal__btn modal__btn--selected" id="slim"  >S</button>
+    <button class="modal__btn" id="medium">M</button>
+    <button class="modal__btn" id="large" >L</button>
 
-    <div class="modal-button">
-      <a href="#" class="modal-btn">
-        <span class="modal-btn__title">добавить</span>
+    <div class="button button--modal">
+      <a href="#" class="button-link">
+        <span class="button-link__text button-link__text--modal">добавить</span>
       </a>
     </div>
   </div>
