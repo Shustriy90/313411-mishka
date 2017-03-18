@@ -36,7 +36,7 @@
 
     <form class="form-order" action="https://echo.htmlacademy.ru/" method="post">
         <p class="form-order__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
-        <fieldset class="form-order__type">
+        <fieldset class="form-order__section">
           <legend class="form-order__title">ТИП</legend>
           <div class="form-order__radio">
             <input id="radio-1" name="productstype" type="radio" checked>
@@ -47,7 +47,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-order__color">
+        <fieldset class="form-order__section">
           <legend class="form-order__title">Цвет</legend>
           <div class="form-order__checkbox">
             <input id="white" name="white" type="checkbox" checked>
@@ -70,7 +70,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-order__dataperson">
+        <fieldset class="form-order__section">
           <legend class="form-order__title">ФИО</legend>
           <div class="form-order__input">
             <label for="firstname">Имя</label>
@@ -84,14 +84,14 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-order__phone">
+        <fieldset class="form-order__section">
           <legend class="form-order__title">ТЕЛ</legend>
           <div class="form-elem">
             <input id="mobile" name="mobile" type="tel" placeholder="+7 XXX XX XX*">
           </div>
         </fieldset>
 
-        <fieldset class="form-order__optinal">
+        <fieldset class="form-order__section">
           <legend class="form-order__title">ДОП</legend>
           <div class="form-order__textarea">
             <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
@@ -101,7 +101,7 @@
         <label class="form-order__required">*Поля обязательны для заполнения</label>
 
         <div class="button button--form">
-          <input class="button-link__text"" type="submit" value="отправить заказ">
+          <input class="button__text"" type="submit" value="отправить заказ">
         </div>
 
       </form>
