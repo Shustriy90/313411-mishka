@@ -1,0 +1,268 @@
+.form-order {
+  padding-top: 8px;
+  padding-left: 27px;
+  padding-right: 30px;
+}
+
+.form-order__desc {
+  color: #444444;
+  font-family: "OpenSans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+  padding-left: 3px;
+}
+
+.form-order__set {
+  border: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.form-order__title {
+  color: #63d1bb;
+  font-family: "OpenSans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.form-order__title:after {
+  content: "";
+  display: inline-block;
+  width: 198px;
+  height: 0.5px;
+  background-color: #63d1bb;
+  position: absolute;
+  top: 7px;
+  left: 62px;
+}
+
+.form-order__wrapper {
+
+}
+
+//стили для label
+.form-order__label {
+  color: #000000;
+  font-family: "OpenSans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 0px;
+  display: block;
+}
+
+// -------------------------
+.form-order__wrapper--padding{
+  padding-left: 63px;
+}
+
+// убираем радио кнопки
+
+.form-order__radio {
+    display: none;
+}
+
+.form-order__radio + .form-order__label {
+  margin-bottom: 25px;
+}
+
+.form-order__radio + .form-order__label:before
+{
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #444444;
+  margin-left: -60px;
+  margin-right: 25px;
+}
+
+.form-order__radio:checked + .form-order__label:before {
+  background: #1abc9c;
+  box-shadow: 0 0 0 2px #000000;
+}
+
+// -------стили для checkbox---------
+
+// убираем чекбоксы
+.form-order__checkbox {
+  display: none;
+}
+
+.form-order__label {
+  margin-bottom: 24px;
+}
+
+.form-order__checkbox + .form-order__label:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 35px;
+  margin-right: 23px;
+  margin-top: -2px;
+  margin-left: 1px;
+  vertical-align: middle;
+  border: 2px solid #000000;
+}
+
+.form-order__checkbox:checked + .form-order__label:before {
+  background-image: url('../img/icon-tick.svg');
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-position: 7px 7px;
+}
+
+.form-order__wrapper--person {
+  margin-bottom: -2px;
+}
+
+// -----------стили для полей ФИО----------
+// .form-order__person {
+//   margin-top: -1px;
+// }
+
+.form-order--person {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+// вызвали миксин
+// .placeholder(all, @color, @font-family, @font-size, @font-weight, @line-height, @opacity)
+.form-order__input {
+  .placeholder(all,
+    #444444,
+    OpenSans,
+    17px,
+    400,
+    18px,
+    0.3
+    );
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid black;
+  width: 101%;
+  padding: 0;
+  padding-bottom: 16px;
+  margin-bottom: 21px;
+}
+
+// --------стил для поля телефона---------------
+.form-order__elem {
+  .placeholder(all,
+    #444444,
+    OpenSans,
+    17px,
+    400,
+    18px,
+    0.2
+    );
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid black;
+  width: 101%;
+  height: 30px;
+  padding: 0;
+  padding-bottom: 8px;
+  margin-bottom: 23px;
+}
+
+.form-order--mobile {
+  position: relative;
+}
+
+.form-order--mobile:after {
+  content: "";
+  background: url('../img/icon-phone.svg');
+  background-repeat: no-repeat;
+  background-size: 26px;
+  background-position: 98% 0px;
+  position: absolute;
+  opacity: 0.2;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+// ------для поля ввода почты------
+.form-order--email {
+  position: relative;
+}
+
+.form-order--email:after {
+  content: "";
+  background: url('../img/icon-mail.svg');
+  background-repeat: no-repeat;
+  background-size: 32px;
+  background-position: 99% 0px;
+  position: absolute;
+  opacity: 0.2;
+  top: 0px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.form-order--fix {
+  margin-bottom: 18px;
+}
+
+
+// -------стили для текстового поля------
+.form-order__textarea {
+  .placeholder(all,
+  #444444,
+  OpenSans,
+  17px,
+  400,
+  18px,
+  0.3
+  );
+  width: 240px;
+  height: 123px;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  padding-top: 13px;
+  padding-left: 15px;
+  outline: 0;
+  resize: none;
+  overflow: auto;
+  margin-bottom: 11px;
+  margin-top: -2px;
+}
+
+
+// -----поля обязательны для заполнения---
+.form-order__required {
+  color: #444444;
+  font-family: "OpenSans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+//------кнопка---------
+// в файле button.less
+
+
+
+
+
+
+
+
+
+
+
+
+
+

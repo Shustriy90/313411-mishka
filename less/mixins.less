@@ -1,0 +1,53 @@
+.placeholder(@color) {
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
+  &:-moz-placeholder {
+    color: @color;
+  }
+  &::-moz-placeholder {
+    color: @color;
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+  }
+}
+
+.placeholder(all, @color, @font-family, @font-size, @font-weight, @line-height, @opacity) {
+  &::-webkit-input-placeholder {
+    color: @color;
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: @font-weight;
+    line-height: @line-height;
+    opacity: @opacity;
+
+  }
+  &:-moz-placeholder {
+    color: @color;
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: @font-weight;
+    line-height: @line-height;
+    opacity: @opacity;
+
+  }
+  &::-moz-placeholder {
+    color: @color;
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: @font-weight;
+    line-height: @line-height;
+    opacity: @opacity;
+
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+    font-family: @font-family;
+    font-size: @font-size;
+    font-weight: @font-weight;
+    line-height: @line-height;
+    opacity: @opacity;
+
+  }
+}
