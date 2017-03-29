@@ -1,6 +1,6 @@
 .textstyle {
   text-decoration: none;
-  font-family: OpenSans Bold;
+  font-family: OpenSans;
   color:  #000000;
   font-size: 17px;
   font-weight: 700;
@@ -14,7 +14,7 @@
 }
 
 .padding-left {
-  padding-left: 72px;
+  padding-left: 75px;
 }
 
 .stretch {
@@ -64,7 +64,7 @@
   .border;
 }
 
-.page-nav__item a {
+.page-nav__link {
   .center;
   .cursor;
   .padding-left;
@@ -91,7 +91,7 @@
 
 
 
-.page-nav__item a,
+.page-nav__link,
 .page-nav__cart {
 
   .textstyle;
@@ -114,20 +114,25 @@
   // text-overflow: ellipsis;
 }
 
-// .page-nav__search:-moz-placeholder
-// .page-nav__search::-moz-placeholder
-// .page-nav__search:-ms-input-placeholder
-.page-nav__search:focus::-webkit-input-placeholder {
-  color: #cacaca;
+.page-nav__search:focus {
+  border: 0;
+  outline: none;
 }
-
 
 .page-nav__set {
   .size;
   .color;
   .border;
   .center;
+  &:hover input[type="search"] {
+    .placeholder(#8d8d8d);
+  }
+  &:active input[type="search"] {
+    .placeholder(#cacaca);
+  }
 }
+
+// -----------------используется миксин для стилизации placeholder-----
 
 .page-nav__search {
   border: 0;
@@ -136,3 +141,10 @@
   .padding-left;
   .stretch;
 }
+
+
+
+
+
+
+
