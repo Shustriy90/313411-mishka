@@ -1,3 +1,125 @@
 .modal {
   display: none;
+  pointer-events: none;
+
+  width: 320px;
+  padding: 37px 30px 47px 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+  background-color: #ffffff;
+  position: fixed;
+  top:25%;
+  left:0;
+  right: 0;
+  z-index: 9999;
 }
+
+.modal:before {
+    content: "";
+    position: fixed;
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.modal:target {
+  display: block;
+  pointer-events: auto;
+  &:before {
+    display: block;
+  }
+
+}
+
+.modal__title {
+  color: #000000;
+  font-family: @font-family;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  // margin: 0 auto;
+}
+
+.modal__subtitle {
+  color: #444444;
+  font-family: @font-family;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 28px;
+}
+
+.modal__checkbox {
+  display: none;
+  &:checked + .modal__label:before {
+  border: 2px solid #63d1bb;
+  }
+}
+
+.modal__label {
+  color: #444444;
+  font-family: @font-family;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  &:hover:before {
+    // border: 2px solid red;
+    background-color: #444444;
+    color: #ffffff;
+  }
+}
+
+
+.modal__label:before {
+  content: "";
+  display: inline-block;
+  // width: 82px;
+  width: 79px;
+  height: 52px;
+  vertical-align: middle;
+  border: 2px solid #ececec;
+  background-color: #ffffff;
+  color: #444444;
+  font-family: @font-family;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+
+.modal__label--small:before {
+  content: "s";
+}
+
+.modal__label--medium:before {
+  content: "m";
+}
+
+.modal__label--large:before {
+  content: "l";
+}
+
+
+
+
+

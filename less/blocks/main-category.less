@@ -2,74 +2,87 @@
   margin-top: -1px;
 }
 
-
 .main-category__item {
-  height: 48px;
+  @height: 48px;
+  height: @height;
   display: block;
   padding: 30px;
   padding-left: 29px;
   padding-top: 24px;
   cursor: pointer;
   position: relative;
+  &:hover {
+    background-color: #59d5bc;
+    height: @height + 5;
+    .main-category__title {
+    margin-top: -5px;
+    }
+  }
 
   &:nth-child(1) {
     background-color: #63d1bb;
+
+    &:after {
+      content: "";
+      background: url('../img/icon-interior.svg');
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      top: 22%;
+      left: 76%;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+
+    &:hover {
+      background-color: #59d5bc;
+      &:after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      background-color: #59d5bc;
+      &:after {
+        opacity: 0.3;
+      }
+    }
+
   }
 
   &:nth-child(2) {
     background-color: #56c3b2;
+    &:after {
+      content: "";
+      background: url('../img/icon-toy.svg');
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      top: 20%;
+      left: 73%;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+    }
+
+    &:hover {
+      background-color: #46c1ae;
+      height: @height + 5;
+      &:after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      background-color: #46c1ae;
+      &:after {
+        opacity: 0.3;
+      }
+    }
+
   }
 
 }
 
-.main-category__item:nth-child(1):hover {
-  background-color: #59d5bc;
-}
-
-.main-category__item:nth-child(1):active {
-  background-color: #59d5bc;
-}
-
-
-.main-category__item:nth-child(2):hover {
-  background-color: #46c1ae;
-}
-
-.main-category__item:nth-child(2):active {
-  background-color: #46c1ae;
-}
-
-// ---------------
-.main-category__item:nth-child(1):hover .main-category__item--interiorsvg:after{
-  border: @border;
-}
-// --------------
-
-.main-category__item--interiorsvg:after {
-  content: "";
-  background: url('../img/icon-interior.svg');
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  top: 22%;
-  left: 76%;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  // z-index: -1;
-}
-
-.main-category__item--toysvg:after {
-  content: "";
-  background: url('../img/icon-toy.svg');
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  top: 20%;
-  left: 73%;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  // z-index: -1;
-}
 
 .main-category__title {
   display: inline-block;
@@ -81,30 +94,4 @@
   font-weight: 700;
   line-height: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
