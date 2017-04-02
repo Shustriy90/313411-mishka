@@ -144,6 +144,163 @@
 
 }
 
+.page-nav--bottom {
+  display: none;
+}
+
+
+// ------медиа-------
+
+@media (min-width: 768px) {
+  .page-nav {
+    display: flex;
+  }
+
+  .page-nav--left {
+    order: 3;
+    background-color: transparent;
+    margin-top: -10px;
+    position: relative;
+  }
+
+  .page-nav--left:after {
+    content: "Бесплатная доставка по России";
+    display: inline-block;
+    color: #444444;
+    font-family: @font-family;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 236px;
+    position: absolute;
+    top: 27px;
+    left: 138%;
+    right: 0;
+    bottom: 0;
+  }
+
+  .page-nav__list {
+    display: flex;
+    border: 0;
+    padding-left: 10px;
+  }
+
+  .page-nav__item {
+    padding-left: 38px;
+    width: auto;
+    border-bottom: 0;
+    background-color: transparent;
+  }
+
+  .page-nav__link {
+    color: #000000;
+    font-family: @font-family;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-left: 0;
+  }
+
+  .page-nav--right {
+    order: 2;
+    // width: 70%;
+    display: flex;
+    border: 0;
+    // justify-content: flex-end;
+    // align-content: flex-end;
+  }
+  .page-nav__elem {
+    border-left: @border;
+    width: 315px;
+    height: auto;
+    // width: 450px;
+    // padding-top: 3px;
+    // align-self: flex-end;
+  }
+
+  .page-nav__set {
+    width: 82px;
+    height: 89px;
+    border-bottom: 0;
+    border-left: @border;
+    &:hover {
+      width: 300px;
+    }
+    &:hover .page-nav__search {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .page-nav__iconcart {
+    margin-right: 30px;
+    margin-left: 7px;
+    margin-top: 4px;
+
+  }
+
+  .page-nav__iconsearch {
+    width: 18px;
+    height: 18px;
+    margin-left: 33px;
+    // margin-top: 10px;
+  }
+
+  .page-nav__cart {
+    padding-left: 25px;
+    border: 0;
+  }
+
+
+  .page-nav__search {
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 1150px) {
+
+  .page-nav--left {
+    order: 1;
+    &:after {
+      display: none;
+    }
+  }
+
+
+
+  .page-nav--right {
+    order: 3;
+  }
+
+  .page-nav--bottom {
+    order: 4;
+  }
+
+  .page-nav__link {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

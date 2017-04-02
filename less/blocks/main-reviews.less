@@ -8,6 +8,8 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
+
+
 }
 
 
@@ -25,7 +27,8 @@
   font-weight: 400;
   line-height: 30px;
   font-size: 15px;
-  margin-bottom: 26px;
+  // margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .main-reviews__author {
@@ -35,7 +38,8 @@
   font-weight: 700;
   line-height: 24px;
   display: block;
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .main-reviews__email {
@@ -51,7 +55,8 @@
 .main-reviews__nav {
   width: 260px;
   height: 52px;
-  margin-top: 26px;
+  // margin-top: 26px;
+  margin-top: 27px;
   // border: 1px solid black;
   background-color: #ffffff;
   display: flex;
@@ -86,6 +91,88 @@
   background-repeat: no-repeat;
   background-position: 38px 12px;
 }
+
+// ----------------------------------
+@media (min-width: 768px) {
+
+  .main-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 45px;
+    margin-top: 36px;
+    // border: @border-black;
+    background-image: url('../img/review@1x.jpg');
+    background-repeat: no-repeat;
+
+    border-bottom: 18px solid transparent;
+    border-image: url('../img/zigzag-line-desktop-bottom.png') 18 repeat;
+    padding-bottom: 114px;
+}
+
+  .main-reviews__title {
+    order: 1;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .main-reviews__wrapper {
+    order: 3;
+    margin-top: 25px;
+    padding-left: 3px;
+    padding-right: 20px;
+  }
+
+  .main-reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 58px;
+  }
+
+  .main-reviews__author {
+    font-size: 17px;
+  }
+
+  .main-reviews__email {
+    line-height: 30px;
+  }
+
+  .main-reviews__nav {
+    order: 4;
+    margin-left: auto;
+    width: 214px;
+    height: 52px;
+    display: flex;
+    margin-top: -58px;
+  }
+
+  .main-reviews__arrow {
+    border: 0;
+  }
+
+  .main-reviews__arrow--right {
+    background-position: 19px 15px;
+  }
+
+  .main-reviews__arrow--left {
+    background-position: 38px 15px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -55,17 +55,19 @@
 }
 
 .button--index {
-  width: 254px;
-  height: 48px;
-  border: 2px solid #444444;
-  margin-top: 27px;
-}
-
-.button--review {
+  // width: 254px;
   width: 256px;
   height: 48px;
   border: 2px solid #444444;
-  margin-top: 40px;
+  // margin-top: 27px;
+  margin-top: 28px;
+}
+
+.button--review {
+  width: 258px;
+  height: 49px;
+  border: 2px solid #444444;
+  margin-top: 41px;
 }
 
 .button__link--reviewtext {
@@ -111,6 +113,14 @@
   margin-top: 30px;
   margin-bottom: 10px;
   margin-bottom: -4px;
+  display: flex;
+  &:hover .button__submit {
+    color: #ffffff;
+  }
+  &:active .button__submit{
+    color: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 .button--modal {
@@ -125,7 +135,52 @@
 }
 
 
+@media (min-width: 768px) {
+  .button--index {
+    align-self: flex-start;
+    order: 5;
+    margin-top: 35px;
+    width: 100%;
+  }
 
+  .button__link {
+    padding-left: 5px;
+
+  }
+
+
+  .button--review {
+    order: 2;
+    width: 172px;
+    height: 49px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 40px;
+    border: 2px solid #444444;
+
+
+  }
+
+  .button__link--reviewtext {
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 3px;
+  }
+
+  .button--send {
+    border: 2px solid #444444;
+    margin-top: 55px;
+    width: 228px;
+    height: 49px;
+  }
+
+  .button__link--spacing {
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 2px;
+  }
+
+}
 
 
 

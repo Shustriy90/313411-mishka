@@ -1,9 +1,11 @@
 .main-category {
   margin-top: -1px;
+  position: relative;
 }
 
 .main-category__item {
   @height: 48px;
+  @size: 5px;
   height: @height;
   display: block;
   padding: 30px;
@@ -13,10 +15,9 @@
   position: relative;
   &:hover {
     background-color: #59d5bc;
-    height: @height + 5;
-    .main-category__title {
-    margin-top: -5px;
-    }
+
+
+
   }
 
   &:nth-child(1) {
@@ -36,6 +37,13 @@
 
     &:hover {
       background-color: #59d5bc;
+      height: @height + @size;
+      margin-top: -((@size) + (1));
+
+      .main-category__title {
+        margin-top: @size;
+      }
+
       &:after {
         opacity: 0.7;
       }
@@ -66,7 +74,11 @@
 
     &:hover {
       background-color: #46c1ae;
-      height: @height + 5;
+      height: @height + @size;
+      margin-top: -(@size);
+      .main-category__title {
+        margin-top: @size;
+      }
       &:after {
         opacity: 0.7;
       }
@@ -83,7 +95,6 @@
 
 }
 
-
 .main-category__title {
   display: inline-block;
   width: 50%;
@@ -94,4 +105,86 @@
   font-weight: 700;
   line-height: 24px;
 }
+
+
+
+
+
+
+
+// ----------------
+@media (min-width: 768px) {
+
+  .main-category {
+    // width: 668px;
+    margin: 0 auto;
+    margin-top: -116px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-category__item {
+    @height: 60px;
+    @size: 5px;
+    height: @height;
+    width: 268px;
+    padding-left: 37px;
+    padding-top: 27px;
+
+
+    &:nth-child(1) {
+      &:after {
+        top: 26%;
+        left: 77%;
+      }
+
+      &:hover {
+        height: @height + @size;
+        margin-top: -(@size);
+        .main-category__title {
+        margin-top: @size;
+      }
+    }
+
+    }
+    &:nth-child(2) {
+      &:after {
+        top: 27%;
+        left: 72%;
+      }
+
+      &:hover {
+        height: @height + @size;
+        margin-top: -(@size);
+        .main-category__title {
+        margin-top: @size;
+      }
+    }
+  }
+
+    .main-category__title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
