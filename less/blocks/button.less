@@ -1,0 +1,190 @@
+.button {
+  width: 188px;
+  height: 48px;
+  // display: flex;
+  &:hover {
+    background-color: #444444;
+    .button__link {
+      color: #ffffff;
+    }
+  }
+  &:active {
+    .button__link {
+      opacity: 0.3;
+    }
+  }
+}
+
+.button__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-family: @font-family;
+  color:  #444444;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.button__link--spacing {
+  letter-spacing: 0.75px;
+}
+
+// .button__text {
+//   font-family: OpenSans;
+//   color:  #444444;
+//   font-size: 17px;
+//   font-weight: 700;
+//   line-height: 16px;
+//   text-transform: uppercase;
+//   margin: auto;
+//   display: block;
+// }
+
+.button--video {
+  margin-top: 25px;
+  margin-bottom: 32px;
+  border: 2px solid #444444;
+  margin-left: 34px;
+}
+
+.button--index {
+  // width: 254px;
+  width: 256px;
+  height: 48px;
+  border: 2px solid #444444;
+  // margin-top: 27px;
+  margin-top: 28px;
+}
+
+.button--review {
+  width: 258px;
+  height: 49px;
+  border: 2px solid #444444;
+  margin-top: 41px;
+}
+
+.button__link--reviewtext {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.button--send {
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  width: 256px;
+  height: 48px;
+  margin: 39px auto 10px auto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+//кнопка отправки формы
+.button__submit {
+  text-align: center;
+  font-family: @font-family;
+  color:  #444444;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: auto;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.button--form {
+  width: 256px;
+  height: 48px;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  margin-left: 2px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-bottom: -4px;
+  display: flex;
+  &:hover .button__submit {
+    color: #ffffff;
+  }
+  &:active .button__submit{
+    color: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.button--modal {
+  margin-top: 31px;
+  width: 260px;
+  height: 52px;
+  background-color: #63d1bb;
+}
+
+.button__link--modal {
+  color: #ffffff;
+}
+
+
+@media (min-width: 768px) {
+  .button--index {
+    align-self: flex-start;
+    order: 5;
+    margin-top: 35px;
+    width: 100%;
+  }
+
+  .button__link {
+    padding-left: 5px;
+
+  }
+
+
+  .button--review {
+    order: 2;
+    width: 172px;
+    height: 49px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 40px;
+    border: 2px solid #444444;
+
+
+  }
+
+  .button__link--reviewtext {
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 3px;
+  }
+
+  .button--send {
+    border: 2px solid #444444;
+    margin-top: 55px;
+    width: 228px;
+    height: 49px;
+  }
+
+  .button__link--spacing {
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 2px;
+  }
+
+}
+
+
+
+
+
+
+
