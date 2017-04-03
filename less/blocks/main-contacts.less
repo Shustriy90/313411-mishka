@@ -1,7 +1,5 @@
 .main-contacts {
   padding-top: 21px;
-  // padding-left: 28px;
-  // margin-bottom: 20px;
 }
 
 .main-contacts__title {
@@ -11,17 +9,13 @@
   font-weight: 700;
   line-height: 30px;
   padding-left: 28px;
-  //
   margin-bottom: 27px;
 }
 
 .main-contacts__info {
-  // margin-top: 24px;
-  //
   margin-bottom: 37px;
   width: 100%;
   border-collapse: collapse;
-  // border: @border-black;
 }
 
 .main-contacts__item {
@@ -42,8 +36,6 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
-    // padding-left: 28px;
-  // border: @border-black;
 }
 
 .main-contacts__email {
@@ -66,12 +58,9 @@
     display: block;
     height: 1px;
     width: 84%;
-    // background-color: #000000;
     background-color: #63d1bb;
     margin-top: -2px;
-    // border: @border-black;
   }
-
   &:hover {
     color: #46c1ae;
     &:after {
@@ -89,17 +78,17 @@
 .main-contacts__map {
   width: 320px;
   height: 457px;
+  background-image: url('../img/icons/icon-map-pin.svg'), url('../img/map-mobile@1x.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat, no-repeat;
 }
 
-
-
-// ----------------------
-
+// ------------tablet---------------------
 @media (min-width: 768px) {
 
   .main-contacts {
     padding-top: 25px;
-    background-image: url('../img/icon-flag.svg');
+    background-image: url('../img/icons/icon-flag.svg');
     background-position: 92.5% 6%;
     background-repeat: no-repeat;
   }
@@ -152,26 +141,74 @@
 
   .main-contacts__map {
     width: 100%;
-    // border: @border-black;
   }
-
-
-
-
-
-
-
-
-
+  // вставить картинку
+  .main-contacts__map {
+    background-image: url('../img/icons/icon-map-pin.svg'), url('../img/map-mobile@1x.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat, no-repeat;
+  }
 
 }
 
+// ------------desctop---------------------
+@media (min-width: 1150px) {
 
+  .main-contacts {
+    padding-top: 70px;
+    padding-left: 177px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-position: 112px 131px;
+  }
 
+  .main-contacts__title {
+    order: 1;
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 43px;
+    margin-top: 71px;
+  }
 
+  .main-contacts__info {
+    order: 3;
+    width: 38%;
+    margin-top: -282px;
+  }
 
+  .main-contacts__info tbody {
+    flex-direction: column;
+  }
 
+  .main-contacts__item {
+    box-sizing: border-box;
+    padding-left: 0;
+    width: 102px;
+    text-align: center;
+  }
 
+  .main-contacts__adress {
+    padding-left: 0;
+  }
 
+  .main-contacts__desc {
+    padding-left: 1px;
+  }
 
+  .main-contacts__map {
+    width: 57%;
+    order: 2;
+  }
+
+  // вставить картинку
+  .main-contacts__map {
+    background-image: url('../img/icons/icon-map-pin.svg'), url('../img/map-mobile@1x.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+}
 

@@ -8,10 +8,7 @@
   border-top: 0;
   border-left: 0;
   border-right: 0;
-
-
 }
-
 
 .main-reviews__title {
   color: #000000;
@@ -27,7 +24,6 @@
   font-weight: 400;
   line-height: 30px;
   font-size: 15px;
-  // margin-bottom: 26px;
   margin-bottom: 25px;
 }
 
@@ -38,7 +34,6 @@
   font-weight: 700;
   line-height: 24px;
   display: block;
-  // margin-bottom: 5px;
   margin-bottom: 4px;
 }
 
@@ -55,12 +50,9 @@
 .main-reviews__nav {
   width: 260px;
   height: 52px;
-  // margin-top: 26px;
   margin-top: 27px;
-  // border: 1px solid black;
   background-color: #ffffff;
   display: flex;
-  // flex-direction: row;
 }
 
 .main-reviews__arrow {
@@ -76,9 +68,6 @@
   }
 }
 
-
-
-
 .main-reviews__arrow--left {
   background-image: url('../img/icons/icon-left-arrow.svg');
   background-repeat: no-repeat;
@@ -92,7 +81,7 @@
   background-position: 38px 12px;
 }
 
-// ----------------------------------
+// ------------tablet---------------------
 @media (min-width: 768px) {
 
   .main-reviews {
@@ -102,10 +91,8 @@
     padding-top: 40px;
     padding-left: 45px;
     margin-top: 36px;
-    // border: @border-black;
     background-image: url('../img/review@1x.jpg');
     background-repeat: no-repeat;
-
     border-bottom: 18px solid transparent;
     border-image: url('../img/zigzag-line-desktop-bottom.png') 18 repeat;
     padding-bottom: 114px;
@@ -161,27 +148,30 @@
 
 }
 
+// ------------desctop---------------------
+@media (min-width: 1150px) {
 
+  .main-reviews {
+    padding-top: 70px;
+    padding-left: 223px;
+    margin-top: 36px;
+    padding-bottom: 161px;
+    margin: auto;
+    box-sizing: border-box;
+    background-position: 50px 45px;
+    border-bottom: 25px solid transparent;
+  }
 
+  .main-reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .main-reviews__text {
+    margin-bottom: 38px;
+    padding-right: 80px;
+  }
+}
 
 
 
